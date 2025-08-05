@@ -2,20 +2,20 @@ from netmiko import ConnectHandler
 
 #  Información del dispositivo
 device = {
-    'device_type': 'cisco_ios',  #  O el tipo de dispositivo adecuado
+    'device_type': 'cisco_ios', 
     'host':   '169.254.288.9',
-    'username': r'.\Administrador',
-    'password': '1d3@y2022*',
-    'port' : 22,          #  O el puerto SSH adecuado
+    'username': 'msaurez',
+    'password': 'M@rpas013*',
+    'port' : 22,
 }
 
 #  Comandos de configuración
 commands = [
     'interface Ethernet 2',
     'switchport mode access',
-    'switchport access vlan 10',  #  Reemplaza 10 con la VLAN deseada
+    'switchport access vlan 10',
     'end',
-    'wr' # Guardar cambios
+    'wr' 
 ]
 
 try:
